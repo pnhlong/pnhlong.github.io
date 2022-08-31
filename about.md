@@ -27,3 +27,25 @@ Some fun facts about the setup of this project include:
 Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
 
 Thanks for reading!
+
+<script>
+rudderanalytics.identify(
+  "1hKOmRA4el9Zt1WSfVJIVo4GRlm", {
+    firstName: "Alex",
+    lastName: "Keener",
+    email: "alex@example.com",
+    phone: "+1-202-555-0146"
+  }, {
+    page: {
+      path: "/best-seller/1",
+      referrer: "https://www.google.com/search?q=estore+bestseller",
+      search: "estore bestseller",
+      title: "The best sellers offered by EStore",
+      url: "https://www.estore.com/best-seller/1"
+    }
+  },
+  () => {
+    console.log("identify call");
+  }
+);
+</script>
